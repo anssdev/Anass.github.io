@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LawAI</title>
+<style>
+  /* CSS Styling */
+  :root{
+    --bg:#ffffff;
+    --ink:#050506;
+    --muted:#043175;
+    --brand:hsl(216, 11%, 91%);
+    --line:#cdd0d3;
+    --radius:14px;
+    --gap:16px;
+  }
+
+  *{
+    box-sizing:border-box;
+  }
+
+  body{
+    margin:0;
+    font:16px/1.6 system-ui, Segoe UI, Roboto, Arial, sans-serif; /* SANS-SERIF FOR NOW.. */
+    background:var(--bg);
+    color:var(--ink);
+  }
+
+  a{
+    color:var(--brand);
+    text-decoration:none;
+  }
+
+  .wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+  }
+
+  /* Header */
+  header{
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    background:rgba(8,19,219,0.7);
+  }
+
+  /* Top bar layout (we are in header) */
+  .top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+
+  /* Brand logo, text container */
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  /* Logo icon adjustment */
+  .logo{
+    width:32px; 
+    height:32px; 
+    display:block;
+  }
+
+  /* Navigation links container */
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* Navigation link button */
+  nav a{
+    padding:8px 12px;
+    border:1px solid var(--line);
+    border-radius:999px;
+  }
+</style>
+</head>
+
+</html>
