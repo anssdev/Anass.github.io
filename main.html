@@ -9,7 +9,7 @@
   :root{
     --bg:#ffffff;
     --ink:#050506;
-    --muted:#043175;
+    --muted:#234e8e;
     --brand:hsl(216, 11%, 91%);
     --line:#cdd0d3;
     --radius:14px;
@@ -44,7 +44,7 @@
     top:0;
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
-    background:rgba(8,19,219,0.7);
+    background:linear-gradient(135deg, rgba(18, 29, 226, 0.8), rgba(20, 87, 231, 0.6), rgba(75, 145, 230, 0.7));
   }
 
   /* Top bar layout (we are in header) */
@@ -67,6 +67,9 @@
     width:32px; 
     height:32px; 
     display:block;
+    background-image:url("trial.png");
+    background-size:cover;
+    background-position:center;
   }
 
   /* Navigation links container */
@@ -84,5 +87,55 @@
   }
 </style>
 </head>
+
+<body>
+<header>
+  <div class="wrap top">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+    <span style="color: #f5f5f7;"> LawAI </span>
+    </div>
+    <nav aria-label="Sections">
+      <a href="#problem">Problem</a>
+      <a href="#research">Background</a>
+      <a href="#personas">Personas</a>
+      <a href="#flows">Flows</a>
+      <a href="#application">Application Concept</a>
+      <a href="#design">Design</a>
+      <a href="#evidence">User Research</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="problem"><h1>Protect your Rights !</h1></section>
+  <section id="Name"><h5>By Anass Taoussi </h5></section>
+
+    <p > As new laws and regulations emerge, it has become increasingly important for individuals of the province of Quebec to understand their rights and how to protect them.
+     After countless of online videos of individuals being taken advantage of, people are quickly realizing the use of legal knowledge as a shield against.</p>
+
+  <section id="research"><h2>The Research</h2></section>
+
+  <section id="personas"><h2>User Personas</h2></section>
+
+  <section id="flows"><h2>User Flows</h2></section>
+
+  <section id="application"><h2>Application Concept</h2></section>
+
+  <section id="wireframes"><h3>Sketches and Wireframes</h3></section>
+
+  <section id="Typography"><h3>Typography</h3></section>
+
+  <section id="Color"><h3> Color Palette</h3></section>
+  
+  <section id="design"><h2>Design</h2></section>
+
+  <section id="evidence"><h2>Final Thoughts</h2></section>
+</main>
+
+
+</body>
+
 
 </html>
