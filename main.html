@@ -1,91 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LawAI</title>
-<style>
-  /* CSS Styling */
-  :root{
-    --bg:#ffffff;
-    --ink:#050506;
-    --muted:#234e8e;
-    --brand:hsl(216, 11%, 91%);
-    --line:#cdd0d3;
-    --radius:14px;
-    --gap:16px;
-  }
-
-  *{
-    box-sizing:border-box;
-  }
-
-  body{
-    margin:0;
-    font:16px/1.6 system-ui, Segoe UI, Roboto, Arial, sans-serif; /* SANS-SERIF FOR NOW.. */
-    background:var(--bg);
-    color:var(--ink);
-  }
-
-  a{
-    color:var(--brand);
-    text-decoration:none;
-  }
-
-  .wrap{
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
-  }
-
-  /* Header */
-  header{
-    position:sticky;
-    top:0;
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-    background:linear-gradient(135deg, rgba(18, 29, 226, 0.8), rgba(20, 87, 231, 0.6), rgba(75, 145, 230, 0.7));
-  }
-
-  /* Top bar layout (we are in header) */
-  .top{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-  }
-
-  /* Brand logo, text container */
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-
-  /* Logo icon adjustment */
-  .logo{
-    width:32px; 
-    height:32px; 
-    display:block;
-    background-image:url("trial.png");
-    background-size:cover;
-    background-position:center;
-  }
-
-  /* Navigation links container */
-  nav{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-
-  /* Navigation link button */
-  nav a{
-    padding:8px 12px;
-    border:1px solid var(--line);
-    border-radius:999px;
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LawAI</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -93,47 +12,168 @@
   <div class="wrap top">
     <div class="brand">
       <div class="logo" aria-hidden="true"></div>
-    <span style="color: #f5f5f7;"> LawAI </span>
+      <span style="color: #f5f5f7;"> LawAI </span>
     </div>
     <nav aria-label="Sections">
       <a href="#problem">Problem</a>
-      <a href="#research">Background</a>
+      <a href="#research">Research</a>
       <a href="#personas">Personas</a>
-      <a href="#flows">Flows</a>
+      <a href="#flows">User Journeys</a>
       <a href="#application">Application Concept</a>
-      <a href="#design">Design</a>
-      <a href="#evidence">User Research</a>
+      <a href="#design">Prototype</a>
+      <a href="#conclusion">Final Thoughts</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
 
-  <section id="problem"><h1>Protect your Rights !</h1></section>
+  <section id="problem"><h1>Protect your Rights!</h1></section>
   <section id="Name"><h5>By Anass Taoussi </h5></section>
 
-    <p > As new laws and regulations emerge, it has become increasingly important for individuals of the province of Quebec to understand their rights and how to protect them.
-     After countless of online videos of individuals being taken advantage of, people are quickly realizing the use of legal knowledge as a shield against.</p>
+  <p > As new laws and regulations emerge, it has become increasingly important for individuals in the province of Quebec to understand their rights and how to protect them.
+     After countless videos of individuals being taken advantage of, people are quickly realizing the importance of legal knowledge. Moreover, high-level officials around the world are also being convicted of crimes, proving that no democratic country exists without accountability. This AI tool serves as an online assistant for individuals seeking to navigate the complex legal landscape.</p>
 
   <section id="research"><h2>The Research</h2></section>
 
-  <section id="personas"><h2>User Personas</h2></section>
+  <p> I have decided to conduct my research through a questionnaire. The main advantage of this method is the ability to reach larger audiences with ease. Since I am the sole researcher, this method is more practical and efficient. Once my sample size reached 13 participants, I analyzed the results and identified common patterns for the design of my AI tool. </p>
 
-  <section id="flows"><h2>User Flows</h2></section>
+  <p> The questionnaire was designed to provide insights into users' language preferences, the issues they face when researching legal information, and the most important feature they would like to see in the AI tool. The results were as follows: </p>
+
+  <p><strong>1. Language Preference:</strong> A significant majority of respondents expressed a preference for using the AI tool in French (the remaining 3 preferred English). This indicates a need for bilingual support in the application.</p>
+
+  <div class="data-visual">
+    <img src="DataVisuals/DataLanguage.png">
+    <div class="caption">Figure 1: Language preference results </div>
+  </div>
+
+
+  <p><strong>2. Common Issues:</strong> Reading through legal documents is the most frequently reported issue when researching legal information. This showcases the importance of summarizing legal documents while ensuring the accuracy of information provided by the app.</p>
+
+  <div class="data-visual">
+    <img src="DataVisuals/SearchingData.png">
+    <div class="caption">Figure 2: Common issues faced by users </div>
+  </div>
+
+  <p> The most important factors to take into account when designing my app are the readability of legal documents, language preference, word simplicity, and AI support.</p>
+
+
+  <section id="personas">
+    <h2>User Personas</h2>
+    <p>Amelia Brown is a very busy professional who juggles multiple responsibilities. Due to financial constraints, she recently had issues with her landlord regarding her lease agreement. She does not have any significant knowledge of laws and regulations pertaining to her situation. With everything going on in her personal and professional life, she feels extremely overwhelmed. As a clear starting point, the AI assistant can help her find relevant resources and documents for her to consult.</p>
+    <div class="persona-images">
+      <img src="AmeliaBrown_Persona.png" alt="Amelia Brown Persona" class="persona-img">
+    </div>
+
+  <p>Zachary Johnson is a 29-year-old construction worker who has been facing challenges with his employer regarding workplace safety and labor rights. He is not well-versed in legal matters and is indecisive about how to proceed. The AI tool can provide him with simplified information about labor laws and his employment contract.</p>
+    <div class="persona-images">
+      <img src="ZacharyJohnson_Persona.png" alt="Zachary Johnson Persona" class="persona-img">
+    </div>
+
+  </section>
+
+  <section id="flows">
+    <h2>User Journeys</h2>
+    <p> Zachary is primarly focused on efficiently summarizing his work contract and understanding his rights. He is dissatsified by the the limited file exportation options of the app, he wants to save it as a .docx file for further editing. Adding different file formats for export could enhance user experience. Another pain point for this user is the lack of clarity for generating another summary. I have to facilitate this process by providing a more intuitive user interface. </p>
+
+    <p> Amelia wishes for legal assistance to handle her lease agreement. Her main concern is the lack of guidance when searching for relevant legal information. The fact that she needed to tirelessly scroll previous chat messages to find information frustrates her. To address this, I will implement a searching feature that allows her to easily find and access the information she needs.</p>
+    <div class="carousel-container">
+      <div class="carousel-slides" id="flowsCarousel">
+        <div class="carousel-slide">
+          <img src="ZacharyJohnson_userflow.png" alt="User Flow 1" class="flow-img">
+        </div>
+        <div class="carousel-slide">
+          <img src="AmeliaBrown_userflow.png" alt="User Flow 2" class="flow-img">
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="prevBtn">‹</button>
+        <div class="carousel-dots" id="flowsDots">
+          <span class="carousel-dot active" data-slide="0"></span>
+          <span class="carousel-dot" data-slide="1"></span>
+        </div>
+        <button class="carousel-btn" id="nextBtn">›</button>
+      </div>
+    </div>
+  </section>
+
 
   <section id="application"><h2>Application Concept</h2></section>
 
   <section id="wireframes"><h3>Sketches and Wireframes</h3></section>
+  <div class="sketch">
+
+     <p> I begin by sketching the low-fidelity model of the app. I decided to use cards to represent its the main features. On the "Resume document" page, I added a "+" button that allow users to upload another document. The "Legal Advice" frame is a simple chatbot that guides the user through the process of finding relevant legal information. Based on the research results, I also included a language selection dropdown at the bottom of the "Settings" frame.
+
+  <img src="Sketch_LawAI.jpeg" alt="Wireframe 1" style="width:50%; height: 1%; display:block; margin: 0 auto; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+</div>
+
+<p> In the case of the wireframes, I decided to add saving options for different file formats. This decision was largely due to the conclusions drawn from our research (i.e., user journeys).
+
+</p>
+
+<div class="WireframesAI">
+
+    <img src="LAWAI_WIREFRAMES.png" alt="Wireframe 2" style="width:100%; height: 1%; margin-right:4%; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+</div>
 
   <section id="Typography"><h3>Typography</h3></section>
 
   <section id="Color"><h3> Color Palette</h3></section>
   
-  <section id="design"><h2>Design</h2></section>
+  <section id="design">
+    <h2>Prototype Design</h2>
+    <p>A search bar was added for "Article search" page, above the status of the search (which either displays the results or "no precedents found"). I added a warning message to inform users about the tradeoff between word simplification and accuracy, as some legal terms may not have simpler alternatives. </p>
 
-  <section id="evidence"><h2>Final Thoughts</h2></section>
+    <p>The high-fidelity prototype screens are shown below. I decided to remove the closing "X" button, because the back chevron is sufficient for navigation. Knowing that some respondents were worried about data privacy, I added the option for users to delete their data in the navigation drawer. </p>
+    <p> I have also gotten rid of the "+" button in the "Resume document" frame, as the back chevron was sufficient for navigating to the previous interface (for uploading documents).</p>
+    
+    <div class="carousel-container" id="protoCarouselContainer">
+      <div class="carousel-slides" id="protoCarousel">
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-01.png" alt="Prototype Screen 1"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-02.png" alt="Prototype Screen 2"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-03.png" alt="Prototype Screen 3"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-04.png" alt="Prototype Screen 4"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-05.png" alt="Prototype Screen 5"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-06.png" alt="Prototype Screen 6"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-07.png" alt="Prototype Screen 7"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-08.png" alt="Prototype Screen 8"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-09.png" alt="Prototype Screen 9"></div>
+        <div class="carousel-slide"><img src="PrototypeDesign/LAWAI_WIREFRAMES-10.png" alt="Prototype Screen 10"></div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="protoPrevBtn">‹</button>
+        <div class="carousel-dots" id="protoDots">
+          <span class="carousel-dot active" data-slide="0"></span>
+          <span class="carousel-dot" data-slide="1"></span>
+          <span class="carousel-dot" data-slide="2"></span>
+          <span class="carousel-dot" data-slide="3"></span>
+          <span class="carousel-dot" data-slide="4"></span>
+          <span class="carousel-dot" data-slide="5"></span>
+          <span class="carousel-dot" data-slide="6"></span>
+          <span class="carousel-dot" data-slide="7"></span>
+          <span class="carousel-dot" data-slide="8"></span>
+          <span class="carousel-dot" data-slide="9"></span>
+        </div>
+        <button class="carousel-btn" id="protoNextBtn">›</button>
+      </div>
+    </div>
+
+  <section id="conclusion"><h2>Final Thoughts</h2></section>
+    <p> The UX design relied heavily on our research findings. The fact that the majority of respondents expressed their frustration in reading legal documents was a key insight that inspired me to include a document summarizer.
+       Furthermore, I made sure that the app design allows users to navigate the app in their preferred language. For individuals looking for advice on legal matters, I made sure that the UI was simple and straightforward. All things considered, this project was a great learning experience and I had fun designing the application.</p>
+
+
 </main>
 
+<!-- Modal for image zoom (optional; currently disabled for persona images) -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+  
+</div>
+
+<script src="main.js"></script>
 
 </body>
 
