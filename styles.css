@@ -17,7 +17,7 @@
 body{
   margin:0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size:16px;
+  font-size:15px;
   line-height:1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -53,12 +53,12 @@ h1, h2, h3, h4, h5, h6{
   margin:0.6em 0 0.4em;
 }
 
-h1{ font-size:clamp(1.8rem, 2.2vw + 1rem, 2.4rem); }
- h2{ font-size:clamp(1.4rem, 1.6vw + 0.9rem, 1.8rem); }
- h3{ font-size:clamp(1.15rem, 1.2vw + 0.7rem, 1.35rem); }
+h1{ font-size:clamp(1.7rem, 2vw + 0.95rem, 2.2rem); }
+ h2{ font-size:clamp(1.3rem, 1.4vw + 0.85rem, 1.7rem); }
+ h3{ font-size:clamp(1.08rem, 1.1vw + 0.68rem, 1.28rem); }
 
 .wrap{
-  max-width:960px;
+  max-width:1040px;
   margin:auto;
   padding:24px 20px;
 }
@@ -94,8 +94,8 @@ header{
 
 /* Logo icon adjustment */
 .logo{
-  width:28px; 
-  height:28px; 
+  width:24px; 
+  height:24px; 
   display:block;
   background-image:url("trial.png");
   background-size:cover;
@@ -111,7 +111,7 @@ nav{
 
 /* Navigation link button */
 nav a{
-  padding:6px 10px; /* was 8px 12px */
+  padding:5px 9px; /* slightly tighter */
   border:1px solid var(--line);
   border-radius:999px;
 }
@@ -329,4 +329,37 @@ header.header-hidden{
   font-size:0.9em;
   color:#666;
   margin-top:6px;
+}
+
+/* Centered typography sample image */
+.type-sample-image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin: 12px 0 18px;
+}
+.type-sample-image img{
+  display:block;
+  margin-inline:auto;
+  width:100%;
+  max-width:720px;
+  height:auto;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Make the Color Palette image smaller than the typography specimen */
+.type-sample-image.color-palette img{
+  max-width: 300px; /* adjust as needed */
+}
+
+main img{
+  margin-top:1.1em;
+}
+
+.carousel-slide img,
+.modal-content,
+.type-sample-image img{
+  margin-top:0;
 }
