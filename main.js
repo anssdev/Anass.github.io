@@ -1,4 +1,4 @@
-// --- Modal image (optional; personas are non-interactive via CSS) ---
+// --- Modal image --
 const modal = document.getElementById('imageModal');
 const modalImg = document.getElementById('modalImage');
 const span = document.getElementsByClassName('close')[0];

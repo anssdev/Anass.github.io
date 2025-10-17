@@ -7,7 +7,7 @@
   --line:#cdd0d3;
   --radius:14px;
   --gap:16px;
-  --header-height: 0px; /* populated at runtime */
+  --header-height: 0px; 
 }
 
 *{
@@ -42,7 +42,7 @@ p{
   line-height:1.65;
   letter-spacing:0.01em;
   text-justify: inter-word;
-  hyphens: auto;
+  hyphens: none;
   margin:0.75rem 0 1rem;
 }
 
@@ -116,7 +116,7 @@ nav a{
   border-radius:999px;
 }
 
-/* Ensure header nav links are white on the dark gradient */
+
 header nav a,
 header nav a:visited{
   color:#f5f5f7;
@@ -302,9 +302,9 @@ header.header-hidden{
   }
 }
 
-/* Make the Prototype Design carousel smaller on desktop */
+
 #protoCarouselContainer{
-  max-width: 300px; /* adjust this to taste (e.g., 700px) */
+  max-width: 300px; 
   margin-left:auto;
   margin-right:auto;
 }
@@ -313,7 +313,6 @@ header.header-hidden{
   #protoCarouselContainer{ max-width: 100%; }
 }
 
-/* Data visual styling */
 .data-visual{
   margin:10px 0 20px;
   text-align:center;
@@ -331,7 +330,6 @@ header.header-hidden{
   margin-top:6px;
 }
 
-/* Centered typography sample image */
 .type-sample-image{
   display:flex;
   justify-content:center;
@@ -349,9 +347,8 @@ header.header-hidden{
   box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Make the Color Palette image smaller than the typography specimen */
 .type-sample-image.color-palette img{
-  max-width: 300px; /* adjust as needed */
+  max-width: 300px; 
 }
 
 main img{
