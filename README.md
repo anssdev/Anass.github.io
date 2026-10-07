@@ -118,7 +118,3 @@ The prototype includes:
 **Institution:** Concordia University
 **Author:** Anass Taoussi
 **Term:** Fall 2025
-
-## Acknowledgements
-
-This project was developed as part of the SOEN 357 course. Course materials, lectures, and user interface design principles were used to guide the research and design process.
